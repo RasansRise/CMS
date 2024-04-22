@@ -1885,6 +1885,9 @@ top panel
   align-items: center;
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
+.mil-logo img,.mil-footer-logo img{
+  width:200px !important;
+}
 .mil-top-panel .mil-top-panel-content .mil-logo {
   display: block;
   display: flex;
