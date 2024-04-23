@@ -83,7 +83,9 @@ body {
     font-size: 14px;
   }
 }
-
+ul{
+  list-style-type: none;
+}
 .mil-wrapper {
   position: relative;
   overflow: hidden;
@@ -1848,10 +1850,10 @@ footer .mil-bg-img {
 .mil-footer-bottom ul li:last-child {
   margin-right: 0;
 }
-.mil-footer-bottom ul li a {
+.mil-footer-bottom ul li a ,footer a{
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
-.mil-footer-bottom ul li a:hover {
+.mil-footer-bottom ul li a:hover ,footer a:hover{
   color: #2599d2 !important;
 }
 @media screen and (max-width: 992px) {
