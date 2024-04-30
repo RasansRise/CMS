@@ -115,7 +115,11 @@ ul{
 section {
   position: relative;
 }
-
+.contact-info li{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 /* -------------------------------------------
 
 typography
