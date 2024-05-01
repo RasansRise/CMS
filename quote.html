@@ -97,46 +97,39 @@
 
             <section style="padding:100px 0;">
                 <div class="container">
-                    <form  class="mil-mb-90 cform" action="https://api.web3forms.com/submit" method="POST">
+                    <form class="mil-mb-90 cform" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
                         <input type="hidden" name="access_key" value="d96022de-bbeb-4a4a-b6e8-16d608c9664a">
-
+                    
                         <div class="row">
                             <div class="col-lg-6">
-
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                     <label class="mil-upper"><span>Full Name</span><span class="mil-required">*</span></label>
-                                    <input type="text" name="name" placeholder="Enter Your Name Here">
+                                    <input type="text" name="name" id="name" placeholder="Enter Your Name Here">
                                 </div>
-
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                     <label class="mil-upper"><span>Email address</span><span class="mil-required">*</span></label>
-                                    <input type="email" name="email" placeholder="Enter Your Email Here">
+                                    <input type="email" name="email" id="email" placeholder="Enter Your Email Here">
                                 </div>
-
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                     <label class="mil-upper"><span>Company Email</span><span class="mil-required">*</span></label>
-                                    <input type="text" name="company-name" placeholder="Enter Your Email Here">
+                                    <input type="text" name="company-email" id="company-email" placeholder="Enter Your Company Email Here">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                     <label class="mil-upper"><span>Phone Number</span><span class="mil-required">*</span></label>
-                                    <input type="tel" name="phone" placeholder="Enter Your Email Here">
+                                    <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number Here">
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                     <label class="mil-upper"><span>Which service you are interested in?</span><span class="mil-required">*</span></label>
-                                    <!-- <input type="" name="email" placeholder="Enter Your Email Here"> -->
-                                    <select name="service" id="service-select" style="    width: 100%;
-                                    padding: 10px;
-                                    margin-top: 20px;">
+                                    <select name="service" id="service" style="width: 100%; padding: 10px; margin-top: 20px;">
                                         <option value="" disabled selected hidden>Choose a service</option>
-
                                         <option value="Outsource Drafting for Millwork Shop Drawings">Outsource Drafting for Millwork Shop Drawings</option>
                                         <option value="3D Rendering & Visualization">3D Rendering & Visualization</option>
                                         <option value="Exhibition Visualisation">Exhibition Visualisation</option>
@@ -144,25 +137,19 @@
                                     </select>
                                 </div>
                             </div>
-                            
-                        
                             <div class="col-lg-12">
-
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                     <label class="mil-upper"><span>Detailed Description</span><span class="mil-required">*</span></label>
-                                    <textarea name="message" placeholder="Enter Your Message Here"></textarea>
+                                    <textarea name="message" id="message" placeholder="Enter Your Message Here"></textarea>
                                 </div>
-
                             </div>
-                            
                             <div class="col-lg-12">
-                                <button type="submit" class="mil-button mil-up">Submit Form</button>
-
-                                <!-- <a href="#." onclick="$('#cform').submit(); return false;" class="mil-button mil-up">Send Now</a> -->
-
+                                <button type="submit" onclick="validateForm()" class="mil-button mil-up">Submit Form</button>
                             </div>
                         </div>
                     </form>
+                    
+                    
                 </div>
             </section>
            
@@ -232,8 +219,7 @@
     
                             <a href="index.html" class="mil-footer-logo mil-up mil-mb-30">
                                 <img src="img/logo/CMS-Animation-White.gif" alt="Logo" style="width: 130px">
-                                <div class="slogan"  style="color:white;">Where Eevery Line Matters</div>
-    
+                                <div class="slogan"  style="color:white;">Where Every Line Matters</div>
                             </a>
     
                         </div>
@@ -261,7 +247,36 @@
         <!-- content -->
     </div>
     <!-- wrapper end -->
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var companyEmail = document.getElementById("company-email").value;
+            var phone = document.getElementById("phone").value;
+            var service = document.getElementById("service").value;
+            var message = document.getElementById("message").value;
 
+            // Check if any field is empty
+            if (name.trim() === "" || email.trim() === "" || companyEmail.trim() === "" || phone.trim() === "" || service.trim() === "" || message.trim() === "") {
+                alert("Please fill out all fields.");
+                return false;
+            }
+
+            // Validate email format
+            var emailRegex = /^\S+@\S+\.\S+$/;
+            if (!emailRegex.test(email) || !emailRegex.test(companyEmail)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            
+
+            // If all validations pass, return true to allow form submission
+            document.querySelector('.cform').submit();
+        }
+        
+    </script>
+    
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>
     <!-- jQuery Validation js -->
