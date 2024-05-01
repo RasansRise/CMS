@@ -1218,7 +1218,7 @@ illustrations
   height: 100%;
   background-color: transparent;
   border: 30px solid rgba(0, 0, 0, 0.1);
-  border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 3px) 30;
+  /* border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 3px) 30; */
   position: absolute;
   z-index: -1;
   bottom: -30px;
@@ -1420,7 +1420,7 @@ services
   padding: 60px;
   height: 90%;
   border: 5px solid rgba(0, 0, 0, 0.1);
-  border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 3px) 5;
+  /* border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 3px) 5; */
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-service-card .mil-card-number {
