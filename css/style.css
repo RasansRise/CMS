@@ -1305,10 +1305,10 @@ icons
   display: block;
   position: relative;
 }
-.mil-icon-box .mil-icon img {
+.mil-icon-box .mil-icon img ,.mil-icon-box .mil-icon svg{
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
-.mil-icon-box:hover .mil-icon img {
+.mil-icon-box:hover .mil-icon img,.mil-icon-box:hover .mil-icon svg {
   transform: scale(1.1);
 }
 .mil-icon-box:hover .mil-icon.mil-icon-border {
@@ -1380,6 +1380,7 @@ services
   position: relative;
   overflow: hidden;
   padding: 60px;
+  height: 90%;
   border: 5px solid rgba(0, 0, 0, 0.1);
   border-image: repeating-linear-gradient(-45deg, transparent, transparent 1px, rgba(0, 0, 0, 0.1) 1px, rgba(0, 0, 0, 0.1) 3px) 5;
   transition: 0.4s cubic-bezier(0, 0, 0.3642, 1);
@@ -1858,7 +1859,7 @@ footer .mil-bg-img {
   transition: 0.2s cubic-bezier(0, 0, 0.3642, 1);
 }
 .mil-footer-bottom ul li a:hover ,footer a:hover{
-  color: #2599d2 !important;
+  color: white !important;
 }
 @media screen and (max-width: 992px) {
   .mil-footer-bottom {
