@@ -41,20 +41,20 @@
                     <div class="mil-navigation">
                         <nav>
                             <ul>
-                                
+
                                 <li class="mil-has-children">
-                                    <a href="about.html">About</a>        
+                                    <a href="about.html">About</a>
                                 </li>
                                 <li class="mil-has-children ">
                                     <a href="services.html">Services</a>
                                 </li>
                                 <li class="mil-has-children">
                                     <a href="portfolio.html">Portfolio</a>
-                                    
+
                                 </li>
 
                                 <li class="mil-active"><a href="contact.html">Contact Us</a></li>
-                               
+
                             </ul>
                         </nav>
                     </div>
@@ -78,7 +78,8 @@
 
             <!-- banner -->
             <section class="mil-banner mil-banner-sm">
-                <img src="img/covers/3.png" class="mil-bg-img mil-scale" data-value-1=".4" data-value-2="1.4" alt="image" style="object-position: top">
+                <img src="img/covers/3.png" class="mil-bg-img mil-scale" data-value-1=".4" data-value-2="1.4"
+                    alt="image" style="object-position: top">
                 <div class="mil-overlay"></div>
                 <div class="container">
                     <div class="mil-background-grid mil-top-space"></div>
@@ -97,65 +98,86 @@
 
             <section style="padding:100px 0;">
                 <div class="container">
-                    <form class="mil-mb-90 cform" action="https://api.web3forms.com/submit" method="POST" onsubmit="return validateForm()">
-                        <input type="hidden" name="access_key" value="d96022de-bbeb-4a4a-b6e8-16d608c9664a">
-                    
+                    <form class="mil-mb-90 cform"  action="https://api.web3forms.com/submit" novalidate>
+                        <input type="hidden" name="access_key" value="fe37e880-e349-4f6e-b606-f826b78230d8">
+                        <input type="hidden" name="subject" value="Quote Request">
+                        <input type="hidden" name="redirect" value="https://cmsdraft.com/quote.html">
+
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
-                                    <label class="mil-upper"><span>Full Name</span><span class="mil-required">*</span></label>
-                                    <input type="text" name="name" id="name" placeholder="Enter Your Name Here">
+                                    <label class="mil-upper"><span>Full Name</span><span
+                                            class="mil-required">*</span></label>
+                                    <input class="input" type="text" name="name" id="name" placeholder="Enter Your Name Here">
+                                    <div class="error"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
-                                    <label class="mil-upper"><span>Email address</span><span class="mil-required">*</span></label>
-                                    <input type="email" name="email" id="email" placeholder="Enter Your Email Here">
+                                    <label class="mil-upper"><span>Email address</span><span
+                                            class="mil-required">*</span></label>
+                                    <input class="input" type="email" name="email" id="email" placeholder="Enter Your Email Here">
+                                    <div class="error"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
-                                    <label class="mil-upper"><span>Company Email</span><span class="mil-required">*</span></label>
-                                    <input type="text" name="company-email" id="company-email" placeholder="Enter Your Company Email Here">
+                                    <label class="mil-upper"><span>Company Email</span><span
+                                            class="mil-required">*</span></label>
+                                    <input class="input" type="text" name="company-name" id="company-name"
+                                        placeholder="Enter Your Company Email Here">
+                                        <div class="error"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
-                                    <label class="mil-upper"><span>Phone Number</span><span class="mil-required">*</span></label>
-                                    <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number Here">
+                                    <label class="mil-upper"><span>Phone Number</span><span
+                                            class="mil-required">*</span></label>
+                                    <input class="input" type="tel" name="phone" id="phone"
+                                        placeholder="Enter Your Phone Number Here">
+                                        <div class="error"></div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
-                                    <label class="mil-upper"><span>Which service you are interested in?</span><span class="mil-required">*</span></label>
-                                    <select name="service" id="service" style="width: 100%; padding: 10px; margin-top: 20px;">
+                                    <label class="mil-upper"><span>Which service you are interested in?</span><span
+                                            class="mil-required">*</span></label>
+                                    <select class="input"name="service" id="service"
+                                        style="width: 100%; padding: 10px; margin-top: 20px;">
                                         <option value="" disabled selected hidden>Choose a service</option>
-                                        <option value="Millwork drafting solutions shop drawings - design">Millwork drafting solutions shop drawings - design</option>
-                                        <option value="3D Rendering & Visualization">3D Rendering & Visualization</option>
+                                        <option value="Millwork drafting solutions shop drawings - design">Millwork
+                                            drafting solutions shop drawings - design</option>
+                                        <option value="3D Rendering & Visualization">3D Rendering & Visualization
+                                        </option>
                                         <option value="Exhibits design">Exhibits design</option>
                                         <option value="Interior design">Interior design</option>
                                     </select>
+                                    <div class="error"></div>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
-                                    <label class="mil-upper"><span>Detailed Description</span><span class="mil-required">*</span></label>
-                                    <textarea name="message" id="message" placeholder="Enter Your Message Here"></textarea>
+                                    <label class="mil-upper"><span>Detailed Description</span><span
+                                            class="mil-required">*</span></label>
+                                    <textarea class="input"name="message" id="message"
+                                        placeholder="Enter Your Message Here"></textarea>
+                                    <div class="error"></div>
                                 </div>
                             </div>
                             <div class="col-lg-12">
-                                <button type="submit" onclick="validateForm()" class="mil-button mil-up">Submit Form</button>
+                                <button type="submit" class="mil-button mil-up">Submit Form</button>
                             </div>
                         </div>
                     </form>
-                    
-                    
+
+
                 </div>
             </section>
-           
+
             <!-- footer -->
             <footer class="mil-relative">
-                <img src="img/covers/CMS-BG6.jpg" class="mil-bg-img mil-parallax" alt="image" style="object-position: top;" data-value-1="-25%" data-value-2="23%">
+                <img src="img/covers/CMS-BG6.jpg" class="mil-bg-img mil-parallax" alt="image"
+                    style="object-position: top;" data-value-1="-25%" data-value-2="23%">
                 <div class="mil-overlay"></div>
                 <div class="container mil-p-120-90">
                     <div class="mil-background-grid"></div>
@@ -163,14 +185,14 @@
                         <div class="col-lg-8">
                             <div class="row">
                                 <div class="col-12">
-    
+
                                     <div class="mil-footer-navigation mil-up mil-mb-90">
                                         <nav>
                                             <ul>
                                                 <li>
                                                     <a href="index.html">Home</a>
                                                 </li>
-                                                <li >
+                                                <li>
                                                     <a href="about.html">About</a>
                                                 </li>
                                                 <li class="mil-active">
@@ -185,10 +207,10 @@
                                             </ul>
                                         </nav>
                                     </div>
-    
+
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-6">
-    
+
                                     <span class="mil-suptitle mil-light mil-upper mil-up mil-mb-30">Contact Us</span>
                                     <ul class="contact-info mil-light-soft">
                                         <li style="display: flex;align-items: center;gap: 10px;">
@@ -204,26 +226,29 @@
                                             <a href="">mfam@cmsdraft.com</a>
                                         </li>
                                     </ul>
-    
+
                                 </div>
                                 <div class="col-md-6 col-lg-6 col-xl-6">
-    
+
                                     <span class="mil-suptitle mil-light mil-upper mil-up mil-mb-30">Location</span>
                                     <p class="mil-text-sm mil-up mil-light-soft mil-mb-30">Eastvale CA, 92880</p>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d838.9460765054124!2d-117.59597817668842!3d33.95189287393854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dccbccd789d333%3A0x3837a8a70e1eb3d0!2s14387%20Healy%20Lake%20St%2C%20Corona%2C%20CA%2092880%2C%20USA!5e0!3m2!1sen!2seg!4v1714585096126!5m2!1sen!2seg" width="100%"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d838.9460765054124!2d-117.59597817668842!3d33.95189287393854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dccbccd789d333%3A0x3837a8a70e1eb3d0!2s14387%20Healy%20Lake%20St%2C%20Corona%2C%20CA%2092880%2C%20USA!5e0!3m2!1sen!2seg!4v1714585096126!5m2!1sen!2seg"
+                                        width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
-                               
+
                             </div>
                         </div>
                         <div class="col-lg-4">
-    
+
                             <a href="index.html" class="mil-footer-logo mil-up mil-mb-30">
                                 <img src="img/logo/CMS-Animation-White.gif" alt="Logo" style="width: 130px">
-                                <div class="slogan"  style="color:white;">Where Every Line Matters</div>
+                                <div class="slogan" style="color:white;">Where Every Line Matters</div>
                             </a>
-    
+
                         </div>
-    
+
                     </div>
                 </div>
                 <!-- <div class="container-fluid">
@@ -239,44 +264,16 @@
                     </div>
     
                 </div> -->
-                
-               </footer>
+
+            </footer>
             <!-- footer end -->
 
         </div>
         <!-- content -->
     </div>
     <!-- wrapper end -->
-    <script>
-        function validateForm() {
-            var name = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var companyEmail = document.getElementById("company-email").value;
-            var phone = document.getElementById("phone").value;
-            var service = document.getElementById("service").value;
-            var message = document.getElementById("message").value;
+    <script src="js/validation.js"></script>
 
-            // Check if any field is empty
-            if (name.trim() === "" || email.trim() === "" || companyEmail.trim() === "" || phone.trim() === "" || service.trim() === "" || message.trim() === "") {
-                alert("Please fill out all fields.");
-                return false;
-            }
-
-            // Validate email format
-            var emailRegex = /^\S+@\S+\.\S+$/;
-            if (!emailRegex.test(email) || !emailRegex.test(companyEmail)) {
-                alert("Please enter a valid email address.");
-                return false;
-            }
-
-            
-
-            // If all validations pass, return true to allow form submission
-            document.querySelector('.cform').submit();
-        }
-        
-    </script>
-    
     <!-- jQuery js -->
     <script src="js/plugins/jquery.min.js"></script>
     <!-- jQuery Validation js -->

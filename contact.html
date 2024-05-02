@@ -99,7 +99,7 @@
             <!-- map -->
             <div class="mil-map-frame mil-up">
                 <div class="mil-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9458.74473421226!2d-117.58743045639316!3d33.95236957967803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dccbccd789d333%3A0x3837a8a70e1eb3d0!2zMTQzODcgSGVhbHkgTGFrZSBTdCwgQ29yb25hLCBDQSA5Mjg4MNiMINin2YTZiNmE2KfZitin2Kog2KfZhNmF2KrYrdiv2Kk!5e0!3m2!1sar!2seg!4v1714583123926!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d838.9460765054124!2d-117.59597817668842!3d33.95189287393854!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dccbccd789d333%3A0x3837a8a70e1eb3d0!2s14387%20Healy%20Lake%20St%2C%20Corona%2C%20CA%2092880%2C%20USA!5e0!3m2!1sen!2seg!4v1714585096126!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <!-- map end -->
@@ -136,15 +136,19 @@
                         </div>
                         <div class="col-lg-7">
 
-                            <form id="cform" class="mil-mb-90 cform" action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value="d96022de-bbeb-4a4a-b6e8-16d608c9664a">
+                            <form id="cform" class="mil-mb-90 cform" action="https://api.web3forms.com/submit" novalidate >
+                                <input type="hidden" name="access_key" value="fe37e880-e349-4f6e-b606-f826b78230d8">
+                                <input type="hidden" name="subject" value="Contact Request">
+                                <input type="hidden" name="redirect" value="https://cmsdraft.com/contact.html">
 
                                 <div class="row">
                                     <div class="col-lg-6">
 
                                         <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                             <label class="mil-upper"><span>Full Name</span><span class="mil-required">*</span></label>
-                                            <input type="text" name="name" placeholder="Enter Your Name Here">
+                                            <input type="text" class="input" name="name" placeholder="Enter Your Name Here">
+                                            <div class="error"></div>
+
                                         </div>
 
                                     </div>
@@ -152,7 +156,9 @@
 
                                         <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                             <label class="mil-upper"><span>Email address</span><span class="mil-required">*</span></label>
-                                            <input type="email" name="email" placeholder="Enter Your Email Here">
+                                            <input type="email" class="input" id="email"name="email" placeholder="Enter Your Email Here">
+                                            <div class="error"></div>
+
                                         </div>
 
                                     </div>
@@ -162,7 +168,9 @@
 
                                         <div class="mil-input-frame mil-dark-input mil-up mil-mb-30">
                                             <label class="mil-upper"><span>Message</span><span class="mil-required">*</span></label>
-                                            <textarea name="message" placeholder="Enter Your Message Here"></textarea>
+                                            <textarea class="input" name="message" placeholder="Enter Your Message Here"></textarea>
+                                            <div class="error"></div>
+
                                         </div>
 
                                     </div>
@@ -300,9 +308,8 @@
     <!-- wrapper end -->
 
     <!-- jQuery js -->
+    <script src="js/validation.js"></script>
     <script src="js/plugins/jquery.min.js"></script>
-    <!-- jQuery Validation js -->
-    <script src="js/plugins/jquery.validate.min.js"></script>
     <!-- swiper js -->
     <script src="js/plugins/swiper.min.js"></script>
     <!-- gsap js -->
