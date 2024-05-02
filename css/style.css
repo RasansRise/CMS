@@ -1193,6 +1193,7 @@ illustrations
   left: 0;
   width: 100%;
   height: 100%;
+  background:white;
 }
 
 .mil-image-frame img {
@@ -1201,9 +1202,7 @@ illustrations
   object-fit: cover;
   object-position: center;
 }
-.swiper-slide .mil-image-frame img {
-  object-fit: contain;
-}
+
 .mil-illustration {
   padding-bottom: 100%;
   position: relative;
@@ -1215,6 +1214,14 @@ illustrations
   right: -1px;
   background-color: rgb(255, 255, 255);
 }
+/* @media(max-width:500px){
+  .mil-illustration .mil-about-counter{
+    padding:30px;
+  }
+  .mil-illustration h1{
+    font-size:20px;
+  }
+} */
 .mil-illustration .mil-about-counter:before {
   content: "";
   width: 100%;
